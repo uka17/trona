@@ -144,6 +144,14 @@ Custom evolutions folder can be choosen by providing `-d` or `--evolutions-dir` 
 yarn trona -d migrations
 ```
 
+### Dry run
+
+By passing `-r` or `--dry-run` option you can prevent trona from applying any evolutions changes and creating evolution records in service table. In the same time output will be done in common manner. Use this option in case if you want just to check which evolutions and in which order will be applied without triggering changes itself.
+
+```console
+yarn trona -r
+```
+
 ## Maintenance
 
 ### Release flow
